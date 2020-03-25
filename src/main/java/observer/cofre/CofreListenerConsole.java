@@ -2,7 +2,7 @@ package observer.cofre;
 
 import java.util.Date;
 
-public class CofreListenerConsole implements CofreListener {
+public class CofreListenerConsole implements CofreListenerAberto, CofreListenerFechado, CofreSenhaIncorretaListener  {
 
 	@Override
 	public void cofreFoiAberto() {
@@ -11,7 +11,12 @@ public class CofreListenerConsole implements CofreListener {
 
 	@Override
 	public void cofreFoiFechado() {
-		System.out.println("O cofre foi fechado: " + new Date().toLocaleString());		
+		System.out.println("O cofre foi fechado: " + new Date().toLocaleString());
+	}
+
+	@Override
+	public void senhaInformadaIncorreta(int senhaInformada) {
+		System.out.println("A senha informada é Incorreta: " + senhaInformada + " - " + new Date().toLocaleString());
 	}
 
 }

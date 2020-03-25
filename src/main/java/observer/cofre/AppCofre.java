@@ -3,7 +3,7 @@ package observer.cofre;
 public class AppCofre {
 	
 	public static void main(String[] args) {
-		Cofre daSala = new Cofre(123456);
+		Cofre daSala = new Cofre(89756);
 		
 		daSala.addListener(new CofreListenerConsole());
 		
@@ -15,10 +15,10 @@ public class AppCofre {
 		daSala.abrir(111);
 		System.out.println(daSala.isAberto());
 
-		daSala.abrir(123456);
+		daSala.abrir(89756);
 		System.out.println(daSala.isAberto());
 		
-		System.out.println("Fim.");
+		System.out.println("Fim da transmissão.");
 		
 	}
 
