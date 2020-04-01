@@ -16,7 +16,7 @@ public class CofreListenerConsole implements CofreListenerAberto, CofreListenerF
 
 	@Override
 	public void senhaInformadaIncorreta(int senhaInformada) {
-		System.out.println("A senha informada é Incorreta: " + senhaInformada + " - " + new Date().toLocaleString());
+		System.out.println("Senha Incorreta: " + senhaInformada + " - " + new Date().toLocaleString());
 	}
 
 }
