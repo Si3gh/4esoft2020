@@ -6,7 +6,7 @@ public class AppCofre {
         Cofre daSala = new Cofre(89756);
         daSala.addListener(new CofreListenerConsole());
 
-        System.out.println("Confre aberto: " + daSala.isAberto() + "\n"); //Retorna TRUE
+//        System.out.println("Confre aberto: " + daSala.isAberto() + "\n"); //Retorna TRUE
         daSala.fechar(); //FECHA COFRE
         System.out.println("\nCofre está aberto: " + daSala.isAberto());
         System.out.println(daSala.isAberto());
